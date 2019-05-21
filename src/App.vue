@@ -68,7 +68,7 @@ export default {
     },
   },
   methods: {
-    cap: decimal => isNaN(decimal) ? 0 : decimal > 9999 ? 9999 : Math.round(decimal * 100) / 100,
+    cap: decimal => isNaN(decimal) ? 0 : Math.round(decimal * 100) / 100,
 
     wave(frequency) {
       return this.baseSpeed / frequency;
@@ -102,12 +102,12 @@ export default {
     margin: 8% 10% 0 10%
 
   .data
-    margin: 4% auto 0
+    margin: 2% auto 0
     padding-bottom: 3rem
     border-radius: .8rem
     display: block
     background: $white
-    width: 42rem
+    width: 46rem
     box-shadow: -1px 4px 59px 0 rgba(0, 0, 0, .1)
 
   .keys
